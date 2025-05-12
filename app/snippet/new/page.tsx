@@ -10,6 +10,8 @@ function Snippet() {
 
   const handleCreate = async (formData: FormData) => {
     "use server"
+    const title = formData.get("title");
+    const code = formData.get("writeCode")
      
   }
   return (
