@@ -32,7 +32,7 @@ function Snippet() {
         </Link>
       </div>
 
-      <div className="w-[400px] border px-10 py-10 flex flex-col mt-4">
+      <div className="w-[400px] border rounded px-10 py-10 flex flex-col mt-4">
         <form action={createSnippet}>
           <div>
             <Label>Title</Label>
