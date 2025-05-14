@@ -1,5 +1,6 @@
 import EditSnippetFrom from "@/components/ui/EditSnippetFrom";
 import { prisma } from "@/lib/prisma";
+import { notFound } from "next/navigation";
 
 const EditSnippetPage = async({
     params,
@@ -14,7 +15,7 @@ const EditSnippetPage = async({
         },
       });
     
-      if (!snippet) return <h1>Snippet Not Found</h1>;
+      if (!snippet) return notFound();
     return(
         <div>
               <EditSnippetFrom snippet={snippet}/>
